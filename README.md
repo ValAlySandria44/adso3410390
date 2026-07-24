@@ -5,5 +5,5 @@
 **Centro de Procesos Industriales y Construcción**
 > SENA - Regional Caldas
 
-1- Layout
-2- Javascript
+1. Layout
+2. Javascript
