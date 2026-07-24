@@ -1,5 +1,5 @@
 # ADSO 3410390
-! [My picture] (img/foto.png)
+![My picture](img/foto.png)
 ## Valeria Arenas Sánchez
 ### Análisis y desarrollo de Software
 **Centro de Procesos Industriales y Construcción**
