@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,32 +9,111 @@
 </head>
 
 <body class="mainmenu">
+
     <main>
-        <header>
-            <h1>ADSO 3410390</h1>
-            <img src="src/img/foto.webp" alt="My Profile">
-            <h2>Valeria Arenas Sánchez</h2>
-            <h3>Análisis y Desarrollo de Software</h3>
-            <h4>Centro de Procesos Industriales y Construcción</h4>
-            <h5>SENA - Regional Caldas</h5>
-        </header>
-        <menu>
-            <a href="01-layout/index.html">
-                <span>01</span>
-                <aside>
-                    <h3>Layout</h3>
-                    <small>Wireframe | Style Guide | Mockup</small>
-                </aside>
-            </a>
-            <a href="02- JavaScript/index.html">
-                <span>02</span>
-                <aside>
-                    <h3>JavaScript</h3>
-                    <small>Behavior | Vanilla</small>
-                </aside>
-            </a>
-        </menu>
+        <section id="inicio">
+
+            <header>
+                <h1>ADSO 3410390</h1>
+                <img src="src/img/foto.webp" alt="My Profile">
+                <h2>Valeria Arenas Sánchez</h2>
+                <h3>Análisis y Desarrollo de Software</h3>
+                <h4>Centro de Procesos Industriales y Construcción</h4>
+                <h5>SENA - Regional Caldas</h5>
+            </header>
+
+            <menu>
+                <a href="#" onclick="mostrarLayout()">
+                    <span>01</span>
+                    <aside>
+                        <h3>Layout</h3>
+                        <small>Wireframe | Style Guide | Mockup</small>
+                    </aside>
+                </a>
+
+                <a href="02- JavaScript/index.html">
+                    <span>02</span>
+                    <aside>
+                        <h3>JavaScript</h3>
+                        <small>Behavior | Vanilla</small>
+                    </aside>
+                </a>
+            </menu>
+
+        </section>
+
+        <section id="layout" style="display: none;">
+
+            <header>
+                <h1>01. Layout</h1>
+                <img src="src/img/foto.webp" alt="My Profile">
+                <p>Descripción</p>
+            </header>
+
+            <menu id="menu2">
+
+                <a href="01-layout/index.html">
+                    <span>01</span>
+                    <aside>
+                        <h3>Wireframe Lo-Fi</h3>
+                    </aside>
+                </a>
+
+                <a href="02- JavaScript/index.html">
+                    <span>02</span>
+                    <aside>
+                        <h3>Wireframe Hi-Fi</h3>
+                    </aside>
+                </a>
+
+                <a href="02- JavaScript/index.html">
+                    <span>03</span>
+                    <aside>
+                        <h3>Style Guide</h3>
+                    </aside>
+                </a>
+
+                <a href="02- JavaScript/index.html">
+                    <span>04</span>
+                    <aside>
+                        <h3>Mock Up</h3>
+                    </aside>
+                </a>
+
+                <a href="02- JavaScript/index.html">
+                    <span>05</span>
+                    <aside>
+                        <h3>Layout</h3>
+                    </aside>
+                </a>
+
+                <a href="#" onclick="mostrarInicio()">
+
+                    <aside>
+                        <h3>Volver al menú</h3>
+                    </aside>
+                </a>
+
+            </menu>
+
+        </section>
+
     </main>
+
+    <script>
+
+        function mostrarLayout() {
+            document.getElementById("inicio").style.display = "none";
+            document.getElementById("layout").style.display = "block";
+        }
+
+        function mostrarInicio() {
+            document.getElementById("layout").style.display = "none";
+            document.getElementById("inicio").style.display = "block";
+        }
+
+    </script>
+
 </body>
 
 </html>
