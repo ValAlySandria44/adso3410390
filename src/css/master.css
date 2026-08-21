@@ -10,6 +10,84 @@ body {
     align-items: center;
     min-height: 100dvh;
 
+    nav.back {
+        align-items: center;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        height: 40px;
+        left: 8px;
+        opacity: .6;
+        padding: 0.4rem;
+        position: fixed;
+        top: 8px;
+        transform: scale(.8);
+        transition: all 0.4s ease-in;
+        width: 40px;
+        &:hover {
+            transform: scale(1.1);
+            opacity: 1;
+        }
+    }
+
+    &.mainmenu.layout {
+        background: linear-gradient(45deg, orchid, black);
+
+        main {
+            header {
+                img {
+                    border: 2px solid #fff9;
+                    border-radius: 5%;
+                    width: 440px;
+                    height: 300px;
+                    display: flex;
+                    margin: 20px auto;
+                    object-fit: cover;
+                }
+
+                h1 {
+                    margin: 0;
+                }
+
+                h3 {
+                    font-weight: 200;
+                }
+
+                img {
+                    background-color: #0003;
+                }
+            }
+        }
+
+        menu {
+            gap: 0.4rem;
+            align-items: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            justify-content: center;
+            padding: 0;
+
+            a:is(:link, :visited) {
+                span {
+                    background-color: rgb(104, 10, 158);
+                }
+
+                aside {
+                    h3 {
+                        font-size: 1rem;
+                    }
+                }
+
+                &:is(:hover) {
+                    background-color: rgb(104, 10, 158);
+                }
+            }
+
+        }
+    }
+
     /*Dynamic: Tiene en cuenta las barras de navegación*/
     main {
         background: linear-gradient(to bottom, #0009, #0000);
@@ -95,76 +173,6 @@ body {
                 span {
                     align-items: center;
                     background-color: crimson;
-                    border-radius: 50%;
-                    display: flex;
-                    justify-content: center;
-                    font-size: 1.8rem;
-                    height: 60px;
-                    transition: all 0.4s ease-in;
-                    width: 60px;
-                }
-
-                &:hoverspan {
-                    background-color: #0009;
-                }
-
-                aside {
-                    margin-left: 0.6rem;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: start;
-
-                    h3 {
-                        margin: 0;
-                        font-size: 1.6rem;
-                        font-weight: 400;
-                    }
-
-                    small {
-                        color: #fff6;
-                        font-size: 0.8rem;
-                        font-weight: 300;
-                    }
-                }
-            }
-        }
-        #layout img {
-                border: 2px solid #fff9;
-                border-radius: 5%;
-                width: 440px;
-                height: 300px;
-                display: flex;
-                margin: 0 auto;
-                object-fit: cover;
-            }
-        #menu2 {
-            align-items: center;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-            justify-content: center;
-            padding: 0;
-
-            a:is(:link, :visited) {
-                align-items: center;
-                background-color: #0009;
-                border-radius: 5rem;
-                color: #fffc;
-                display: flex;
-                padding: 0.6rem;
-                text-decoration: none;
-                transition: all 0.4s ease-in;
-                width: 320px;
-
-                &:is(:hover) {
-                    background-color: rgb(74, 0, 88);
-                    transform: scale(1.04) translateX(18px);
-                }
-
-                span {
-                    align-items: center;
-                    background-color: rgb(74, 0, 88);
                     border-radius: 50%;
                     display: flex;
                     justify-content: center;
