@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEGO Colombia</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div id="inicio"></div>
+  <header class="navbar">
+    <div class="nav-brand">
+      <div class="logo-box">
+        <img src="Imagenes/logo.png" alt="LEGO Logo">
+      </div>
+      <h1 class="brand-title">LEGO Colombia</h1>
+    </div>
+
+    <nav class="nav-links">
+      <a href="#inicio">INICIO</a>
+      <a href="#nuevos-sets">NUEVOS SETS</a>
+      <a href="#novedades">NOVEDADES</a>
+      <a href="#ediciones">LEGO EDITIONS</a>
+      <a href="#ofertas">OFERTAS</a>
+      <a href="#galeria">GALERÍA</a>
+    </nav>
+
+    <div class="nav-user">
+      <a href="#">SIGN UP</a>
+      <a href="#">MY CART</a>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section id="nuevos-sets" class="section scroll-section">
+    <h1>Nuevos sets</h1>
+      <div class="sets-grid">
+        <div class="sets-banner-card">
+          <div class="sets-banner-text">
+            <h2>Sets nuevos LEGO®</h2>
+            <p>Nuevos mundos, personajes y desafíos acaban de llegar. Descubre los últimos sets LEGO® y encuentra el próximo que querrás construir.</p>
+          </div>
+          <div class="sets-banner-img">
+            <img src="Imagenes/nuevos.webp" alt="LEGO Personaje">
+          </div>
+        </div>
+
+        <div class="product-card-new">
+          <span class="tag-nuevo">NUEVO</span>
+          <div class="product-img-container">
+            <img class="img-box" src="Imagenes/castillo.webp" alt="CASTILLO DE DISNEY">
+            <img class="img-built" src="Imagenes/castillo1.webp" alt="CASTILLO DE DISNEY">
+          </div>
+          <h4 class="product-name">CASTILLO DE DISNEY</h4>
+          <p class="product-price">$2.799.900</p>
+          <button class="btn-orange-cart">Añadir a la Bolsa</button>
+        </div>
+
+        <div class="product-card-new">
+          <span class="tag-nuevo">NUEVO</span>
+          <div class="product-img-container">
+            <img class="img-box" src="Imagenes/tenis.webp" alt="NIKE AIR FORCE 1 X SET LEGO®">
+            <img class="img-built" src="Imagenes/tenis1.webp" alt="NIKE AIR FORCE 1 X SET LEGO®">
+          </div>
+          <h4 class="product-name">NIKE AIR FORCE 1 X SET LEGO®</h4>
+          <p class="product-price">$559.900</p>
+          <button class="btn-orange-cart">Añadir a la Bolsa</button>
+        </div>
+
+        <div class="product-card-new">
+          <span class="tag-nuevo">NUEVO</span>
+          <div class="product-img-container">
+            <img class="img-box" src="Imagenes/doom.webp" alt="BUSTO DEL DOCTOR DOOM">
+            <img class="img-built" src="Imagenes/doom1.webp" alt="BUSTO DEL DOCTOR DOOM">
+          </div>
+          <h4 class="product-name">BUSTO DEL DOCTOR DOOM</h4>
+          <p class="product-price">$399.900</p>
+          <button class="btn-orange-cart">Añadir a la Bolsa</button>
+        </div>
+
+        <div class="product-card-new">
+          <span class="tag-nuevo">NUEVO</span>
+          <div class="product-img-container">
+            <img class="img-box" src="Imagenes/carroverde.webp" alt="COCHE DE F1® ASTON MARTIN ARAMCO AMR25">
+            <img class="img-built" src="Imagenes/carroverde1.webp" alt="COCHE DE F1® ASTON MARTIN ARAMCO AMR25">
+          </div>
+          <h4 class="product-name">COCHE DE F1® ASTON MARTIN ARAMCO AMR25</h4>
+          <p class="product-price">$1.599.900</p>
+          <button class="btn-orange-cart">Añadir a la Bolsa</button>
+        </div>
+
+        <div class="product-card-new">
+          <span class="tag-nuevo">NUEVO</span>
+          <div class="product-img-container">
+            <img class="img-box" src="Imagenes/rapidos.webp" alt="COCHE DODGE CHARGER R/T DE FAST AND FURIOUS">
+            <img class="img-built" src="Imagenes/rapidos1.webp" alt="COCHE DODGE CHARGER R/T DE FAST AND FURIOUS">
+          </div>
+          <h4 class="product-name">COCHE DODGE CHARGER R/T DE FAST AND FURIOUS</h4>
+          <p class="product-price">$999.900</p>
+          <button class="btn-orange-cart">Añadir a la Bolsa</button>
+        </div>
+
+        <div class="product-card-new">
+          <span class="tag-nuevo">NUEVO</span>
+          <div class="product-img-container">
+            <img class="img-box" src="Imagenes/fosil.webp" alt="FÓSILES DE DINOSAURIO: TRICERATOPS">
+            <img class="img-built" src="Imagenes/fosil1.webp" alt="FÓSILES DE DINOSAURIO: TRICERATOPS">
+          </div>
+          <h4 class="product-name">FÓSILES DE DINOSAURIO: TRICERATOPS</h4>
+          <p class="product-price">$699.900</p>
+          <button class="btn-orange-cart">Añadir a la Bolsa</button>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="novedades" class="section scroll-section">
+        <h1>Novedades</h1>
+      <div class="carousel-banner" id="carouselBanner">
+        <button class="carousel-arrow prev-arrow" onclick="cambiarSlide(-1)">&lt;</button>
+        
+        <div class="carousel-content">
+          <div class="carousel-text">
+            <h2 id="carouselTitle">Halloween cobra vida</h2>
+            <p id="carouselDesc">Dale a tu celebración un toque oscuro, creativo y lleno de personalidad.</p>
+            <button class="btn-discover" id="carouselBtn">DESCUBRIR EL SET</button>
+          </div>
+
+          <div class="carousel-image-container">
+            <img class="carousel-slide-img active" src="Imagenes/huesos.png" alt="Halloween LEGO">
+            <img class="carousel-slide-img" src="Imagenes/navida.png" alt="Navidad LEGO">
+            <img class="carousel-slide-img" src="Imagenes/elite.png" alt="Elite LEGO">
+          </div>
+        </div>
+
+        <button class="carousel-arrow next-arrow" onclick="cambiarSlide(1)">&gt;</button>
+
+        <div class="carousel-dots">
+          <span class="dot active" onclick="irSlide(0)"></span>
+          <span class="dot" onclick="irSlide(1)"></span>
+          <span class="dot" onclick="irSlide(2)"></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="ediciones" class="section scroll-section">
+      <h2 class="section-title">Lego editions</h2>
+      <div class="catalog-layout">
+        
+        <aside class="sidebar-filters">
+          <h3 class="filter-main-title">Filtros</h3>
+
+          <div class="filter-group">
+            <span class="filter-header">Interés</span>
+            <label><input type="checkbox"> Deportes</label>
+            <label><input type="checkbox"> Experto</label>
+            <label><input type="checkbox"> Formula 1</label>
+            <label><input type="checkbox"> Ninjas</label>
+            <label><input type="checkbox"> Películas</label>
+            <label><input type="checkbox"> Vehículos</label>
+          </div>
+
+          <div class="filter-group">
+            <span class="filter-header">Tema</span>
+            <label><input type="checkbox"> Star Wars</label>
+            <label><input type="checkbox"> Editions</label>
+            <label><input type="checkbox"> Ninjago</label>
+          </div>
+
+          <div class="filter-group">
+            <span class="filter-header">Edad</span>
+            <div class="age-buttons-grid">
+              <button class="btn-age">7-8 años</button>
+              <button class="btn-age">9-11 años</button>
+              <button class="btn-age">12+ años</button>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <span class="filter-header">Precio</span>
+            <label><input type="checkbox"> $100.001 - 200.000</label>
+            <label><input type="checkbox"> $400.001 - 600.000</label>
+            <label><input type="checkbox"> $1.000.001 - 1.500.000</label>
+          </div>
+
+          <button class="btn-reset">RESET FILTERS</button>
+        </aside>
+
+        <div class="products-grid">
+          <div class="product-item">
+            <div class="product-image-holder">
+              <img class="img-box" src="Imagenes/titanic.webp" alt="TITANIC">
+              <img class="img-built" src="Imagenes/titanic1.webp" alt="TITANIC">
+            </div>
+            <h4 class="product-title">TITANIC</h4>
+            <p class="old-price">$6.999.900</p>
+            <p class="price">$4.499.900</p>
+            <button class="btn-cart">Agregar al carrito</button>
+          </div>
+
+          <div class="product-item">
+            <div class="product-image-holder">
+              <img class="img-box" src="Imagenes/tie-box.png" alt="Tie Interceptor">
+              <img class="img-built" src="Imagenes/tie-built.png" alt="Tie Interceptor Armado">
+            </div>
+            <h4 class="product-title">INTERCEPTOR TIE</h4>
+            <p class="old-price">$1.599.900</p>
+            <p class="price">$1.119.930</p>
+            <button class="btn-cart">Agregar al carrito</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECCIÓN 4: OFERTAS -->
+    <section id="ofertas" class="section scroll-section">
+      <h2 class="section-title">Ofertas LEGO®</h2>
+      <div class="catalog-layout">
+        
+        <!-- Sidebar de Filtros para Ofertas (Filtro único detallado como pediste) -->
+        <aside class="sidebar-filters">
+          <h3 class="filter-main-title">Filtros</h3>
+
+          <div class="filter-group">
+            <span class="filter-header">Interés</span>
+            <label><input type="checkbox"> Deportes</label>
+            <label><input type="checkbox"> Experto</label>
+            <label><input type="checkbox"> Formula 1</label>
+            <label><input type="checkbox"> Ninjas</label>
+            <label><input type="checkbox"> Películas</label>
+            <label><input type="checkbox"> Vehículos</label>
+          </div>
+
+          <div class="filter-group">
+            <span class="filter-header">Tema</span>
+            <label><input type="checkbox"> Star Wars</label>
+            <label><input type="checkbox"> Editions</label>
+            <label><input type="checkbox"> Ninjago</label>
+          </div>
+
+          <div class="filter-group">
+            <span class="filter-header">Edad</span>
+            <div class="age-buttons-grid">
+              <button class="btn-age">7-8 años</button>
+              <button class="btn-age">9-11 años</button>
+              <button class="btn-age">12+ años</button>
+            </div>
+          </div>
+
+          <div class="filter-group">
+            <span class="filter-header">Precio</span>
+            <label><input type="checkbox"> $100.001 - 200.000</label>
+            <label><input type="checkbox"> $400.001 - 600.000</label>
+            <label><input type="checkbox"> $1.000.001 - 1.500.000</label>
+          </div>
+
+          <button class="btn-reset">RESET FILTERS</button>
+        </aside>
+
+        <!-- Grilla de Productos de Ofertas -->
+        <div class="products-grid">
+
+          <div class="product-item">
+            <div class="product-image-holder">
+              <span class="badge-discount">-30%</span>
+              <span class="badge-shipping">Envío gratis *</span>
+              <img class="img-box" src="Imagenes/balon-box.png" alt="Balón">
+              <img class="img-built" src="Imagenes/balon-built.png" alt="Balón Armado">
+            </div>
+            <h4 class="product-title">BALÓN DE FÚTBOL</h4>
+            <p class="old-price">$699.900</p>
+            <p class="price">$489.930</p>
+            <button class="btn-cart">Agregar al carrito</button>
+          </div>
+
+          <div class="product-item">
+            <div class="product-image-holder">
+              <span class="badge-discount">-60%</span>
+              <span class="badge-shipping">Envío gratis *</span>
+              <img class="img-box" src="Imagenes/messi1-box.png" alt="Messi">
+              <img class="img-built" src="Imagenes/messi1-built.png" alt="Messi Armado">
+            </div>
+            <h4 class="product-title">LIONEL MESSI: CELEBRACIÓN</h4>
+            <p class="old-price">$999.900</p>
+            <p class="price">$399.999</p>
+            <button class="btn-cart">Agregar al carrito</button>
+          </div>
+
+          <div class="product-item">
+            <div class="product-image-holder">
+              <span class="badge-discount">-50%</span>
+              <img class="img-box" src="Imagenes/messi2-box.png" alt="Messi Leyenda">
+              <img class="img-built" src="Imagenes/messi2-built.png" alt="Messi Leyenda Armado">
+            </div>
+            <h4 class="product-title">LIONEL MESSI: LEYENDA DEL FÚTBOL</h4>
+            <p class="old-price">$499.900</p>
+            <p class="price">$249.950</p>
+            <button class="btn-cart">Agregar al carrito</button>
+          </div>
+
+          <div class="product-item">
+            <div class="product-image-holder">
+              <span class="badge-discount">-20%</span>
+              <img class="img-box" src="Imagenes/ninjago-box.png" alt="Ninjago">
+              <img class="img-built" src="Imagenes/ninjago-built.png" alt="Ninjago Armado">
+            </div>
+            <h4 class="product-title">AUTO DE CARRERAS NINJA EVO DE KAI</h4>
+            <p class="old-price">$79.900</p>
+            <p class="price">$63.920</p>
+            <button class="btn-cart">Agregar al carrito</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 5: GALERÍA DE PRODUCTOS -->
+    <section id="galeria" class="section text-center scroll-section">
+      <h2 class="section-title font-serif gallery-title">Galería de productos</h2>
+      <div class="gallery-full-container">
+        <img src="Imagenes/galeria-panoramica.png" alt="Galería Completa LEGO">
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    const slidesData = [
+      {
+        titulo: "Halloween cobra vida",
+        desc: "Dale a tu celebración un toque oscuro, creativo y lleno de personalidad.",
+        fondo: "#4d2389",
+        textoBtn: "DESCUBRIR EL SET"
+      },
+      {
+        titulo: "Navidad mágica LEGO",
+        desc: "Construye momentos inolvidables estas fiestas con sets exclusivos.",
+        fondo: "#b30000",
+        textoBtn: "VER SETS DE REGALO"
+      },
+      {
+        titulo: "Programa ELITE Premium",
+        desc: "Descubre beneficios únicos, preventas y recompensas especiales.",
+        fondo: "#111111",
+        textoBtn: "VER MÁS"
+      }
+    ];
+
+    let currentSlide = 0;
+
+    function actualizarSlide() {
+      const banner = document.getElementById("carouselBanner");
+      const titleElement = document.getElementById("carouselTitle");
+      const descElement = document.getElementById("carouselDesc");
+      const btnElement = document.getElementById("carouselBtn");
+      const images = document.querySelectorAll(".carousel-slide-img");
+      const dots = document.querySelectorAll(".carousel-dots .dot");
+
+      // Cambiar textos y color de fondo
+      titleElement.innerText = slidesData[currentSlide].titulo;
+      descElement.innerText = slidesData[currentSlide].desc;
+      btnElement.innerText = slidesData[currentSlide].textoBtn;
+      banner.style.backgroundColor = slidesData[currentSlide].fondo;
+
+      // Ocultar todas las imágenes y mostrar únicamente la activa
+      images.forEach((img, index) => {
+        if (index === currentSlide) {
+          img.classList.add("active");
+        } else {
+          img.classList.remove("active");
+        }
+      });
+
+      // Actualizar los puntos indicadores (dots)
+      dots.forEach((dot, index) => {
+        dot.classList.toggle("active", index === currentSlide);
+      });
+    }
+
+    function cambiarSlide(direction) {
+      currentSlide += direction;
+      if (currentSlide < 0) {
+        currentSlide = slidesData.length - 1;
+      } else if (currentSlide >= slidesData.length) {
+        currentSlide = 0;
+      }
+      actualizarSlide();
+    }
+
+    function irSlide(index) {
+      currentSlide = index;
+      actualizarSlide();
+    }
+  </script>
+
+</body>
+</html>
