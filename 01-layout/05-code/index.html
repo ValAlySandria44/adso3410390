@@ -18,29 +18,37 @@
       <h1 class="brand-title">LEGO Colombia</h1>
     </div>
 
-    <nav class="nav-links">
+    <nav class="nav-links" id="navLinks">
       <a href="#inicio">INICIO</a>
       <a href="#nuevos-sets">NUEVOS SETS</a>
       <a href="#novedades">NOVEDADES</a>
       <a href="#ediciones">LEGO EDITIONS</a>
       <a href="#ofertas">OFERTAS</a>
       <a href="#galeria">GALERÍA</a>
-    </nav>
 
-    <div class="nav-user">
+      <div class="nav-user">
       <a href="#">SIGN UP</a>
       <a href="#">MY CART</a>
     </div>
+    </nav>
+
+    <button id="mburger" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
   </header>
 
   <main class="main-content">
     <section id="nuevos-sets" class="section scroll-section">
-    <h1>Nuevos sets</h1>
+      <h1>Nuevos sets</h1>
       <div class="sets-grid">
         <div class="sets-banner-card">
           <div class="sets-banner-text">
             <h2>Sets nuevos LEGO®</h2>
-            <p>Nuevos mundos, personajes y desafíos acaban de llegar. Descubre los últimos sets LEGO® y encuentra el próximo que querrás construir.</p>
+            <p>Nuevos mundos, personajes y desafíos acaban de llegar. Descubre los últimos sets LEGO® y encuentra el
+              próximo que querrás construir.</p>
           </div>
           <div class="sets-banner-img">
             <img src="Imagenes/nuevos.webp" alt="LEGO Personaje">
@@ -117,10 +125,10 @@
     </section>
 
     <section id="novedades" class="section scroll-section">
-        <h1>Novedades</h1>
+      <h1>Novedades</h1>
       <div class="carousel-banner" id="carouselBanner">
         <button class="carousel-arrow prev-arrow" onclick="cambiarSlide(-1)">&lt;</button>
-        
+
         <div class="carousel-content">
           <div class="carousel-text">
             <h2 id="carouselTitle">Halloween cobra vida</h2>
@@ -146,9 +154,9 @@
     </section>
 
     <section id="ediciones" class="section scroll-section">
-      <h2 class="section-title">Lego editions</h2>
+      <h1>Lego editions</h1>
       <div class="catalog-layout">
-        
+
         <aside class="sidebar-filters">
           <h3 class="filter-main-title">Filtros</h3>
 
@@ -254,8 +262,10 @@
 
           <div class="product-item">
             <div class="product-image-holder">
-              <img class="img-box" src="Imagenes/halcon.webp" alt="LEGO® STAR WARS HALCÓN MILENARIO 75192 ULTIMATE COLLECTOR 1">
-              <img class="img-built" src="Imagenes/halcon1.webp" alt="LEGO® STAR WARS HALCÓN MILENARIO 75192 ULTIMATE COLLECTOR 1">
+              <img class="img-box" src="Imagenes/halcon.webp"
+                alt="LEGO® STAR WARS HALCÓN MILENARIO 75192 ULTIMATE COLLECTOR 1">
+              <img class="img-built" src="Imagenes/halcon1.webp"
+                alt="LEGO® STAR WARS HALCÓN MILENARIO 75192 ULTIMATE COLLECTOR 1">
             </div>
             <h4 class="product-title">LEGO® STAR WARS HALCÓN MILENARIO 75192 ULTIMATE COLLECTOR 1</h4>
             <p class="price">$7.119.930</p>
@@ -278,9 +288,9 @@
     </section>
 
     <section id="ofertas" class="section scroll-section">
-      <h2 class="section-title">Ofertas LEGO®</h2>
+      <h1>Ofertas LEGO®</h1>
       <div class="catalog-layout">
-        
+
         <aside class="sidebar-filters">
           <h3 class="filter-main-title">Filtros</h3>
 
@@ -377,8 +387,8 @@
     </section>
 
     <section id="galeria" class="section text-center scroll-section">
-      <h2 class="section-title">Galería de productos</h2>
-      
+      <h1>Galería de productos</h1>
+
       <div class="gallery-grid-container">
         <div class="gallery-item"><img src="Imagenes/galeria1.webp" alt="LEGO Galería 1"></div>
         <div class="gallery-item"><img src="Imagenes/galeria2.webp" alt="LEGO Galería 2"></div>
@@ -403,14 +413,15 @@
 
   <footer class="site-footer">
     <div class="footer-container">
-      
+
       <div class="footer-col">
         <div class="footer-logo">
           <img src="Imagenes/logo.png" alt="LEGO Logo">
           <h3>LEGO® Colombia</h3>
         </div>
         <p class="footer-desc">
-          Inspirando y desarrollando a los constructores del mañana a través del juego creativo y la exploración sin límites.
+          Inspirando y desarrollando a los constructores del mañana a través del juego creativo y la exploración sin
+          límites.
         </p>
       </div>
 
@@ -446,7 +457,8 @@
     </div>
 
     <div class="footer-bottom">
-      <p>© 2026 The LEGO Group. Todos los derechos reservados. LEGO, el logotipo de LEGO y la Minifigura son marcas registradas de The LEGO Group.</p>
+      <p>© 2026 The LEGO Group. Todos los derechos reservados. LEGO, el logotipo de LEGO y la Minifigura son marcas
+        registradas de The LEGO Group.</p>
     </div>
   </footer>
 
@@ -519,5 +531,8 @@
     }
   </script>
 
+  <script src="script.js"></script>
+
 </body>
+
 </html>
